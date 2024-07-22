@@ -1,0 +1,13 @@
+<label> {{name}} </label>  
+
+
+<div> 
+    <input type="text" [(ngModel)]="twoWayName">
+</div>
+
+<div> {{twoWayCreationStatus}} </div>
+
+{{twoWayName}}
+
+<button [disabled]="!allowNewTwoWay" (click)="onCreateTwoWay"> Reset </button>
+<!-- <div> {{twoWayCreationStatus}} </div> -->
